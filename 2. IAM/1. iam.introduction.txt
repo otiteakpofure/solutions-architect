@@ -1,0 +1,12 @@
+root account should only be used for setting up the account and should not be sued anymore. because all account has a root user created on it by default 
+while users are created from the root account 
+
+a user can belong to multiple groups and it is not compulsory someone must be part of a group 
+
+IAM PERMISSIONS 
+
+USERS ARE CREATED BECAAUSE OF PERMISSION WHICH IS A JSON DOCUMENT CALLED POLICIES
+
+FOLLOWS THE LEAST PRIVILEGES
+
+

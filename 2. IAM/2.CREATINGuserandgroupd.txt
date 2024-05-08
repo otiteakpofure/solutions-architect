@@ -1,0 +1,26 @@
+to the dashboard , go to the users 
+
+from the root users , then you create other users 
+
+when creating a user choose IAM USER , 
+
+
+
+creating a group then yiu can choose the type of policy
+
+tages allow key value pairts so as to assoviated accounts 
+
+to ensure security to users, add MFA 
+
+
+
+you cann custom your account url by creating an account alias this allows for customs url 
+
+and we can use this to create a new browers windows by using alias and this allows us to sign in as an iam user 
+
+root account: just have an accoutn id and no access keys 
+
+but iam users has its username associated with the root acccount id 
+
+
+

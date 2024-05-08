@@ -1,0 +1,6 @@
+REGION: is what is show as us-east1 and its good you choose whats near you. 
+
+services of aws 
+
+when  service is globlal it means its all over the world 
+

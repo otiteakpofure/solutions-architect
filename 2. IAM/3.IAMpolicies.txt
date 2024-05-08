@@ -1,0 +1,27 @@
+                                   IAM policies inheritance
+
+Inline policy is a policy attached to a particular user 
+
+policies are inherited 
+
+
+IAM POLICIES STRUCTURE
+
+CONSIST OF 
+
+version: policy language version , always include "2012 -10-17"
+id: an identifier for the policy (optional)
+statements: onne or more statements
+ 
+ statements consists of 
+
+sid: an identifier for the statements 
+effect: whether to allow or deny 
+principal: which account user or role to whuch the poliyc will be applied to 
+actions: list of api calls  or actions which the policy allows or denies 
+resource: list of resources which acctount will ne applied to 
+condition: conditions for when this policy is in effect (optional)
+
+
+
+

@@ -1,0 +1,41 @@
+                                AWS  cloud history
+aws global infrastructure
+
+aws regions: regions are all over the world.  they habe a name . region can be described as a clusters of data center located in various parts of the world.most aws services are region scoped 
+
+aws avaialability zones:
+
+aws edge locations/points of prescence :  amazon has 400+ points of prescence ( 400+ edge locations & 10+ regional caches ) in 90+ cities across 40+ countries 
+                                           content is delivery with low latency 
+
+
+aws data centers
+
+exam question: HOW DO YOU CHOOSE AN AWS REGION? 
+               FOR EXAMPLE , YOU WANT TO LAUNCH AN APPLICATION WHERE SHOULD YOU DO IT?
+The answer is it depends , 1. compliance: goverbment want the data to be local to where you are deploying it and data never leaves the region witout your explicit premission 
+                           2.  proximiit: latency issues 
+                           3. available services: not all regions have all services.  
+                           4.pricing: pricing varies from region to region and is transparent in the service pricing page 
+
+
+AWS avaialability zones
+            each region has manay avaialability zones (min 3 max 6). each avaialability zones, is one or more discrete center with networking power and connectiity 
+            and they are seperate from each other so as to avold full bring down during disataers and are connected with high connectivitty 
+
+
+ AWS 
+
+ IAM 
+ ROUTE53 (DNS SERVICE)
+ CLOUD FRONT (CDN)
+ WAF (WEB APPLICATION FIREWALL)
+
+ REGION SCOPED AWS 
+
+ AMAZON EC2 (IAS)
+ ELASTICS BEANSTALK (PAS)
+ LAMBDA (FAS)
+ REKOGNITION (SAS)
+
+ TO CHCEK ALL THISE CHECK THE REGION TABLE 
