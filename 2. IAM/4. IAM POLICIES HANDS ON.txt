@@ -1,0 +1,6 @@
+once you remove a user from a group the user does not have oermission to do anything 
+
+you can either add policy directly to a group or you can policy to them  
+
+by using a * we encompass many api calls together 
+

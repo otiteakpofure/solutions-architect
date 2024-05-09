@@ -1,0 +1,14 @@
+to acess aws = aws management concolse  = protect by password and mfa
+               aws cli  = protected by access keys 
+               aws sdk = for code : protected by access keys 
+
+aws keys are generated through aws console 
+do not share access keys 
+
+in aws cli all command starts using aws 
+
+boto = aws cli for puthon which an aws sdk 
+
+
+
+

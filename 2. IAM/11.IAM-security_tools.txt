@@ -1,0 +1,4 @@
+iam credentual repoirt ; a report that list all your accounts and the statuies of their various credentials
+
+iam access advisor : all services that a user has accessed
+

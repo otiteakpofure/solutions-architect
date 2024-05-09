@@ -1,0 +1,4 @@
+roles for aws services 
+after we create a role we choose the services and permissions 
+
+trusred entities 

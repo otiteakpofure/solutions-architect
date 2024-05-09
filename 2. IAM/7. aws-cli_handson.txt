@@ -1,0 +1,12 @@
+how to create access keys 
+
+to create access keys go to the userna,e and underseuciry credentials go to the access keys and chhoose the paltform you want to use the acces keys ad download the csv file 
+
+to configure aws on ypur cli 
+
+write aws confuigure 
+enter access key id 
+aws secrete access key 
+choose default rehion name 
+
+any code running in aws cli , run aws and command by the side based of permissions set 

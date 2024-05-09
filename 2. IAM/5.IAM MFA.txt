@@ -1,0 +1,21 @@
+to protect IAM , we can use two mechanism which is a password policy and MFA 
+
+ set a min pass lenght , lowercase letter or alphanumeric 
+ prevent password re-use , password expiration
+  
+
+
+  MFA 
+
+  protect atleast your root account either an MFA device you can use virtual mfa or authy for multiple device  or yoiu can use u2f security key 
+
+  hardware key fob MFA device  and if using aws govcloud you have a special key fob 
+
+                                                                       password polic 
+
+under account settings 
+
+
+                                    mfa
+in setting mfa , you can protect it using MFA AND YOU can do this by clickung secyrity credentials from your account under yur profuile at the top 
+

@@ -1,0 +1,5 @@
+the roles allows us to assign permissions for aws services 
+  an entiri : a role and aaws services 
+
+
+  permisiions - iam roles - aws services 

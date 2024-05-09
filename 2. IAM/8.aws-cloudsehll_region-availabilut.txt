@@ -1,0 +1,6 @@
+aws cloud shell is not available in all regions 
+
+aws cloude shell  is a terminal in the cloud of aws and follows the same command pattern as aws cli 
+ you can uoload and download files ino the cloud shell environment 
+
+ 

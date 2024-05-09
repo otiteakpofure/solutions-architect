@@ -1,0 +1,7 @@
+do not use root except when you set an aws account 
+one aws = one physical users
+create strong password 
+use MFA 
+create and use roles for giving permissions to AWS services 
+use Access keyf ror progamming 
+audit permissions = iam credentials report and IAM access advisor 
