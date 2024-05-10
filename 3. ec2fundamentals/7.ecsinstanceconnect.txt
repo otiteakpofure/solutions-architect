@@ -1,0 +1,5 @@
+in ec2 sinstance connect 
+we put the username and tghen when we click coinnect it generate a temporary ssh key and then it connects and run the ssh 
+
+when you click on an instance and you see connect it is the ec2 isntance connect that it is 
+

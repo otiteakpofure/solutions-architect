@@ -1,0 +1,10 @@
+you can run aws iam list-users 
+
+never put your access keys into the ecs instance connect  becuase anyboyd can get it if they are allowed to log into your ec2 instance 
+
+giving ecs insrance rolea allows ec2 instanaces to poerform action on aws 
+
+to attach a role to ec2 instaances , click on arions and under security click  modify iam role 
+this allows the ec2 insrrance to connect and use other aws services 
+
+

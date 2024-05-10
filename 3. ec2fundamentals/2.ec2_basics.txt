@@ -1,0 +1,27 @@
+                                  Amazon ec2
+ec2 consists of 
+
+renting virtual servers (ec2)
+storing data on vritual drives (ebs)
+distributing load acorss mamchhine\(elb)
+scaling services using auto scaling group |(asg)
+
+
+ec2 sixing and configuration options 
+os = linux, windows and even mac os 
+firewall rules = security group
+bootstrap scrpt (configure at firs launch): ec2 user data 
+
+
+ec2 user data 
+
+it is possible to bootstrap our isntance using an ec2 user data script
+bootstraping memans launching command shwn a machine starts
+that script is only run once at the instance first start 
+ec2 user data  is to automate boot tasks when the ec2 instance 
+
+ec2 user data scropts runs with the root user 
+
+ ec2 instacen types 
+ 
+

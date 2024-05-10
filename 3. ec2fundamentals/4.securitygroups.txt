@@ -1,0 +1,28 @@
+security groups are fundamental of network security how network traffic and only contain allow rules and reference by ip address or other securiy group and means 
+
+security group can refer to another group 
+
+they reguate 
+
+- ports
+authorzed ipranges 
+-control of inbound and outbound work 
+
+
+security grouo can be attached to multipe instance and instances can habe multiple security groups 
+
+locked down to a region/ vpc combination 
+it good to mainteain one security grop for ssh access 
+
+if you get time out = this is a security group issue 
+connection refused = appliccation error or its not launched 
+
+all inbound traffic is blocked by default 
+all outbound traffic is allowed  by default
+
+                                                        referncing other security group 
+
+it allowsd instance to talk to eac other 
+
+regardless of ip address it allowance ec2 istance to talk to eachother 
+

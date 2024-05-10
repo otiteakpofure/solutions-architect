@@ -3,3 +3,8 @@ the roles allows us to assign permissions for aws services
 
 
   permisiions - iam roles - aws services 
+
+
+  and with these aws services can talk to aws services 
+
+  

@@ -1,0 +1,2 @@
+go to billing and cost management under your profile 
+and then yiu can create a budget to watch your aws account and then noptification can be sent when 

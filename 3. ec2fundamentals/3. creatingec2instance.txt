@@ -1,0 +1,45 @@
+ebs volumes : alwyas check for delte on termination and remove it 
+when you laucnh instances ensure you restart it 
+public ip 
+
+private ip = for internal network 
+
+  if you stop and instance and start it again it will change the public ip address 
+
+  and the private ip a
+
+                                                                ec2 instance type 
+
+m5.2 large  
+
+m = instance class 
+5 = generation of the instance ( aws improves them over time )
+2x = size within the instance class 
+
+                                                         GENERAL PUROPSE INSTANCE TYPE 
+
+T2 MICRO IS  general purpose instance types and with ther family of t 
+
+                                                        computr oprmizied
+require high processors , high performnace , machine learning , gamin server 
+require good cpu ,,
+
+all ctype of ec2 instances are good for compute peformNCE 
+
+
+                                              MEMORY OPTIMIZED
+This requires ec2 instance that requiress a large version of ram; 
+they usually use relational and non-relational databases and optimized for business prupose and big structured data and they are of the famuly of R 
+
+
+                                       STORAGE OPTIMIZED 
+
+great for storage -intenzive tasks that require high , sequential read and write access to large data sets on local storage 
+
+use cases :
+
+  high frequency online transaction processing system 
+  relational and non-relational databases 
+  cache for in-memorey data bases and start with i , d or h1 
+
+  

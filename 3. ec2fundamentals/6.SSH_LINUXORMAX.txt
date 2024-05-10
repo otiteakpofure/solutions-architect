@@ -1,0 +1,13 @@
+do not allow space in the pem file 
+
+to ssh using 
+
+
+
+
+move to the directory where the pem file is saved tghen run the command 
+
+
+
+then run  chmod 0400
+          ssh-i nameofthepemfile ec2-user@publicipadress of the ec2instance 
