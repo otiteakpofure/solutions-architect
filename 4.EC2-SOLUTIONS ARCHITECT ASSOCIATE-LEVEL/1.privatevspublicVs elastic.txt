@@ -1,0 +1,10 @@
+ipv6 isu usually used for iot devices 
+
+two different companies cannhave the same orivate ipranges
+
+elastic ip 
+
+when  you start and stop your instacne , the public ip changes and as such giving ec2 isntacne elastic ip counter racts this 
+
+you can have 5 elasitc ip in your accpunt and try reducing the use of elastic ip 
+

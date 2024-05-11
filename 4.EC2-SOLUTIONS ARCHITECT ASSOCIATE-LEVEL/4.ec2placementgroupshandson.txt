@@ -1,0 +1,3 @@
+checek for under network and security on the drop down on network and security for placement groups  
+
+and after selcting the type of stratgey you want whether cluster , spread or partition, tthen you can you attaceh the created instacen to the pal;cement group 

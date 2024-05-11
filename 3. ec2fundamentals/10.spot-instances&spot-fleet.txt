@@ -1,0 +1,43 @@
+to understanding spot instance, you define the max -spot price  that wee are willing and get the instance while current spot price < max price we are willing to pay 
+if the current spot price > your max price you can chhoose to stop or ternminare your isntance within a 2 miute grace period 
+
+by stoping when the price reduice you can comeback to use it 
+
+to avoid instacen being taken by aws you use a spot block although the spot bloack is no loger avaialable FOR 2 HOURS MAX
+
+
+
+
+HOW TO TERMINATE A SPOT INSTANE 
+
+
+YOU MAKE A SPOT REQUEST AND PRICES TO PAY AND WHEN IT IS VALID FROM there are two types of request that can be made 
+
+1. one time spot request  :once it requested instances will be launched and the spot request will go away 
+2. persistent request: it is request which allows instance to bevalide aslong as it is the spot request is valid ( from -to)
+
+
+if you want to cancel a spot request , it has to be in the open state , disable or active state 
+
+
+if you want to terminate a spot instance , you have to cancel it and then terminate it 
+
+
+
+
+spot fleets 
+
+it is the utlimate way to save money 
+
+ot is equal to set of spot instances + on-demand instacnes
+the spot fleet will try to meet the target capcaity with theprice constraints 
+
+when the spot fleet reacheds your target capacity or price it will stop to launch spot instacnes
+
+strategies to allocate spot instances 
+lowest price : from the pool of lowest price
+diversified : distributed acorss all pools 
+capaicty optimized:  pool wit the optimal capacity for the number of instanaces
+pricecapacityoptimized: pools with the highest capacity available , then select the pool with the lowest price (best chpice for most wprkloads)
+
+spot fleet allows us to automartially request spot instances with the lowest price 

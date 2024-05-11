@@ -1,0 +1,13 @@
+logucal component in a vpc that represent a virtual netowkr card 
+
+the ENI 
+
+- can have one primary ipv4 and one or more secondary ipv4 and they give private ip 
+- mac address can be added 
+more security groups can be attacehd 
+
+they are bound to a specific az and ccan only work in that az 
+
+eni can bemove that like fro example you have 2 instances you can move your private eni to the second one 
+- 
+

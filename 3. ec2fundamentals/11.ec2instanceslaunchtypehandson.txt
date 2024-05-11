@@ -1,0 +1,15 @@
+spot request 
+click on request spot instances
+
+you can launch a spot fleet by clickung the spot fleet you want 
+
+you can also launch a spot isntace by click on the instance and looking for the checkbox that has the instance of spot instance 
+
+when chooins thr persistent instanc eyou must choose th validuty date of the instance
+
+reserved instance allows us to choose instance of specific type based in cirteria
+
+capcity reservation is useful when you want capacity to be avauleble to you as per a particular instance type  whether you are using it or not 
+
+
+

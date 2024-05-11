@@ -1,0 +1,28 @@
+this describes as our ec2 instances will be placed within the aws infrastructure.
+we dont get direct contact with aws hardware but we can inform aws how ee like our ec2 instabces to be placed within aws 
+
+to do this  3 strategies willl be used 
+a. cluster - cluster instances into a low-latency group in a single availability zone  (gives high performance with high risk)
+b. spread - spread instance across undelying hardware (max 7 instancec per groupd per AZ) -critical application 
+partition - spread instances across many different partitions which rely on differenent sets of racks within an AZ to 100s of ec2 instacne per grpupd application sucj as cassandar, kafta and haddoop
+
+
+
+in clsuter pralcement group all ec2 instacne will be in the same avaialability zone , its useful for low latency , 10 gps of bandwith 
+if the az fails all instances fail at the same time 
+
+ use for big data job , applicaion that need low latency 
+
+ spread - ec2 instacnes are spead on different hardwares and different az 
+          used for applications that has high availability and instance failure must be isolated from one another 
+
+          NOTE: LIMITED TO 7 INSTANCES PER AZ PER PLACEMENT GROUP 
+
+partition: we can have instaances spread across many different partitions 
+
+           each partition is speadk ad 7 partitions per az and can elad to 100s of eac2 instacen 
+           they do not share the same hardware rack 
+
+           each partition is isolated from failure 
+
+           it is used for application with big data 

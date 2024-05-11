@@ -1,0 +1,8 @@
+to creta an elsiasic ip click on elasitc ip and choose from the amazon pool and alocte it to the specific ec2 instacne 
+
+hourly charge for in-use public ipv4 address $0.005 
+hourly charge for idle public ipv4 address $0.005
+
+and after creating the ipv4 then we can assocated with the ec2 instance thro=iugh its private ip address
+
+and after using the elasitc ip you can dissociate it and to provent further cost release the elastic ip address 
