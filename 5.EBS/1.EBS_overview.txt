@@ -1,0 +1,31 @@
+                EC2 instance storage 
+EBS volume 
+AN elastic block store is a network drive that you can attach to the instance whule they are running , it allows your instance to persist data 
+even after termination 
+even if the isntance is deleted we can use the same ebs for the new instance 
+they are bound to specifi availaibility zone 
+
+and  can bemounted to one isntance at a time at the ccp level 
+
+
+EBS VOLUME 
+to communicate with the ebs volumes and ec2 instence is between the network cause its a network drive , it can be detached from on instance and added to another isntance 
+it is locked to one availability zone 
+ypu have to specify how many GBS AND iopS ( Io OPERATIONS PER SECOND)
+YOU CAN ALSO INCREASE THE CARPTITY AND 
+
+
+IN THE CLOUD PRACTIIONER LEVVEL , EBS VOLUMES ARE ONLY LINKED TO A PARTICULAR EC2 INSTANCE BUT IN SOLUTIONS ARCHITECT YOU CAN attach
+TWO EBS VOLUMS TO ONE INSTANCE 
+
+YOU CAN CREATE AN EBS VOLUME AND DONT ATTACH THEM TO ECS INSTANCE 
+
+
+
+EBS-DELETE ON TERMINATION ATTRIBUTE 
+
+The delet on termination attribute controls how the ebs volumes works on the ec2 instance 
+
+the root volume by default is set to default delete but other volumes are not set to delete 
+
+

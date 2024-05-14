@@ -1,0 +1,11 @@
+when you stio an instane everything boot again 
+
+but whe ec2 isntacne is in hiberntat mode it doesnt take time to boot whatever in the ec2 is written to a file in ebs and the root ebs volume must be envryopted 
+
+use cases
+a. long-running processing 
+b. savung the RAM state 
+c. boot up fast and services that time take 
+d, instance ram sixe must be lss than 15ogb and that can chane 
+instance size : not supprted for bare metal instanes 
+NOTE: HIBERNATIPN SHOULD not be more than 60 days 

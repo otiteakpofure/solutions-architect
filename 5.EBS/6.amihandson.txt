@@ -1,0 +1,14 @@
+
+and aftee this has been done you can creat your own ami by clicking crete image 
+
+
+to create your custom ami do the following 
+
+launch and instance  and chose amazon luinux 2 
+
+after createing this instance gthen create an image from it and then check under AMI to see your custom ami 
+
+
+
+and you can launch instance from ypir AMI which you created under the the ec2 instance section
+

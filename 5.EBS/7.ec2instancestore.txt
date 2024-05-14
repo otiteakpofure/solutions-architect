@@ -1,0 +1,10 @@
+ebs volumes have a limited performance and if you need a high performance ebs volumes used the ecs instance store 
+
+ecs instaner store is the name of the hardrive attached to the physical serber in each regions 
+they have better i/o pefrormenac and better trjoigh 
+
+NOTE: IF YOIU TERMINATE THE EC2 INSTANCE WHICH HAS AN EC2 INTANCE STORE IT WILL BE DELETED AND THIS IS NOT A GOOD USE FOR LONG TERM STORAGE 
+
+IF YOU WANT TO USE IT USE A BACK UP ALONGSIDE
+
+LOCAL EC2 INSTANCE STORE 

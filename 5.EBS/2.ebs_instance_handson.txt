@@ -1,0 +1,9 @@
+by defeault an ebs volume is attacjed to an instance 
+
+to change its propertites , you can click volumes 
+
+gp2 (meand general purpose)
+
+you can attach it to an instance 
+
+the root volume is the volume which contains the booting images of an instance 

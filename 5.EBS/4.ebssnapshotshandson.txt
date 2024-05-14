@@ -1,0 +1,11 @@
+to creat a snapsbot from an ebs volume , click on the ebs volume and then and then click action and then create gthe snapshot from it 
+
+and to copy the snapshot inot another region coick the new snaphsit and click cipy and ciopy it to the region you want 
+
+you can also create a new volume from a snapshot and it can be any az 
+
+volume can also be envrpted 
+
+using recycle bin 
+
+you can create a recylce bin to be able to have retention rules 

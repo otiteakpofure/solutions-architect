@@ -1,0 +1,25 @@
+AMI (amazon machine image)
+
+you can use AMI by aws or customize it into your own image 
+   - you can set up the operating system , configiration , any monitpring tool or any comfigiration
+   - if you set  up yoiur own ami you will have faster boot /configuration time because all your software is pre-packaged
+    
+
+AMI can be built for a specific region and can be copied
+we can launch various ec2 instance from various ami
+A public AMI: Aws provided 
+
+your own ami: creaye and maintain them by yourself 
+
+or you can launch an aws ami made by someboyd or vendors who seel aws ami from aws markeyplace 
+
+
+
+AMI PROCESS FROM AN EC2 instacen
+- Start an ec2 instance and customize it 
+- stop the instane fpr data integrity 
+- build the AMI and this will also create ebs snapshots 
+- launch instances from other amis what it means that we can crete an ami in one az and then copy it to another az 
+
+
+

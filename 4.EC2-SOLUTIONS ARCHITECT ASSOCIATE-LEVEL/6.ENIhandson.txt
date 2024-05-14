@@ -1,0 +1,15 @@
+when you create instances go down to networking and see the network interface and the instance will habe a single network interface and these created inteefeface
+
+comtsians a. public ipv4 
+          b. private ipv4 
+          c. privat ipv4 DNS    
+
+
+
+For example , you create two network interfaces and then you want to add maybe a new network interface and you can create and then link it anyENI you choose 
+andwhen doing remember that an eni is bound to a specifi ax so you habe to check the az of the interface you want to link it to 
+
+
+this is usuefyl incase there is a network fail over and allows network inteface to be moved 
+
+NOTE: IF YOY CREATE AND ENI MANUALLY , AND THE INTERFACE ATTACHED TO IT IS DELETD , THE ENI WILL NOT BE DELETD ONLY THRE INTERFACE ATTCJED TO IT WILL BE DELETED 
