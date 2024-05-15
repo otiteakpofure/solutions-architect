@@ -1,0 +1,9 @@
+ebs is only attached to one instance at a time except in the case of io1/io2 ec2 instances in which they can be attached to multiple instances
+    they are locked in the AZ level 
+
+    to migrate an ebs volume across az 
+    take a snapshot of the az you want to copy, 
+    restore the snapshot to another AZ 
+    EBS backups use IO and you should run them while your application is handling a lot of traffic 
+
+    EFS IS  network file system which can be applied to variousAZ AND ITRS ONLY FOR LINUX INSANES 

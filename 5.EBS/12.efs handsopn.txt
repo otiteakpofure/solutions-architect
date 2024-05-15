@@ -1,0 +1,22 @@
+1. when you click on efs ensure the vpc is selected so as to show wheere the files will be save do over the network   
+
+AMAZON EFS 
+- create the name and se a VPC 
+- ensure the file system eithe region  (allows efs alongvarious avaialbilty zone used for production environment  )or one zone (allows file system in just one AZ using for development environment )
+ just that one zone is cheaper than regional 
+- ensure lifecycle management 
+set throughput mode  -bursting = automated amount which allows data stored and space to scale automatically 
+                     - enhanced which is better 
+
+                     set the network access 
+
+and after creating moutnt the efs onto an ec2 instacnce 
+to do this 
+
+after that crtea a subnet in which the efs will run from 
+
+under configure storage click on edit and choose file system as efs  AND DO NOT USE THE ROOT VOLUME OF THE EC2 INSTANCE and use it for other instance you create 
+
+the mount point is the point at which files can be started creating in the ec2 instances 
+NOTE: IF YOU CHOOSE TRANSITION INTO STANDARD IT WILL MAKE THE FILE REMOVE FROM ARCHIVE OR INFREQUENT ACCESS 
+

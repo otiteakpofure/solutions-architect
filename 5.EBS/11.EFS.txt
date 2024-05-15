@@ -1,0 +1,44 @@
+managed NFS (network file system) can be mounted n various ec2 instance across various AZ 
+HIGHLY AVAILABLE , ESCABLE AND 3TIME THE COURSE OF an ebs gp2 volume and pay per use 
+they are like cdn used for content delivery , web serving , data sharing and it needs security group and its compatible with linux based AMI 
+encryption using kms 
+
+and it is standard file sustem on linux using the POSIX
+you dongt need to p;an for scalability as it will automatically scaled on its own 
+
+
+EFS performance sna storage class 
+it has various perfrormance ans torage class 
+
+1000s of concurent NFS clients , 10gb +/s throughput , it can grow to petabyte-scale network file system ,automatically 
+
+PERFORRMANCE MODE (SET AT EFS CREATION TIME)
+- General purpose (default): latency sensitive use cases (web server , cms ,etc)
+ - Max I/o -higher latency , throughput , highly parallel (big data , media processing )
+
+ THROUGHPUT MODE
+ -  BURSTING -1tb = 50mib/s + burst of up to 100mbs 
+    privisioned - set your throughput regardless of storage size , ex: 1GIBS for 1 tb storage 
+    elastic - automatically scale throughput up or down based on your workloads 
+     - up to 3gibs for reads and 1gibs for writes 
+     used for unpredictable workloads 
+
+
+
+     EFS STIRAGE class
+     a. storage class which is a lifecyle management feature which allows fro the movement of storeage files after a certain number of days 
+         standard: for frequently accessed files 
+         infrequent access (EFS-IA): cost to retreived files , lower price to store 
+         archive : rarely accessed date which data is acccess a few times a year 
+
+         TO MOVE FILES BETWEEN STORAGE TIERS  LIFECYLYC POLICIES WHOULS BE CREATED SO AS TO SHOW WHEN A FILE WILL BE MOVED FROM ONE STORAGE TIER TO ANOTER 
+
+
+    AVAILAIBILUT AND DURABILTIY 
+
+    STANDARD : useful for multiple az 
+    one zone: useful for where you want to use one AZ so using the efs one zone IA is good here 
+
+    by using right efs stirage clkass save up 90% 
+
+    

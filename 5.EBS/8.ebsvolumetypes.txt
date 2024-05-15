@@ -1,0 +1,58 @@
+ebs volumes types are 6
+
+1. gp2/gp3 are volumes that balances prices and performabce fir a varitey of workloads 
+2. io1,io2 block express are hihest performance ssd volumes for mission critical low laenty and high-throiuhgput workloads 
+3. st1 (HDD): low cost HDD volume designed for frequently access throughput intensice workloads 
+  sc1: lowest cost HDD volumes designed for less frquently accessed worjloads
+
+  ebs volumes are defined with the following size , throughput and IOPS 
+   - when in doubt consult aws documentation 
+
+   NOTE: ONLY GP2/gp3 and io1/io2 block express can be used for boot volumes 
+
+                                      EBS VOLUMES USE CASES 
+
+
+GP2/GP3 
+COSTeffective sotrage , low latency 
+system boot volumes, virtual desktops , development and test environments 
+1gib - 16 Tib 
+
+NOTE : THE DIFFERENCE BETWEEN GP2 AND GP3 IS THAT GP3 IS  the newest verison and can HAS the baseline iops to 3000 and throuhgb to 125mibs but this can be increased
+to 16000 IOPS na and throuhgput og 1000mb , the size of thr volume and iops are not linked you can increase one and leabe the other
+
+
+gp2  
+
+ small gp2 volumes can burst iops to 3000
+ size of the volume and iops are linked , max iops is 16000
+ 
+ 
+ 3 iops per gb means at 5334 gb we are at the max iops 
+
+
+                                   PROVISIONED IOPS (PIOPS) ssd
+THEY ARE USED for critical business applications with sustained iops performance  or applicatiosn that need more than 16,000 iops , great for databases
+workloads (sensitive to storage perf and consistency )
+
+io 1 ( 4gb - 16tib ): max PIOPS: 64,000 for nitro ec2 isntance & 32,000 for other 
+                      can increase piops independently from storage size 
+
+io2 Block Express (4Gib _ 64Tib ): sub-milliseceond latency 
+                                    max PIOPS: 256,000 with an IOPs: GiB ration of 1,000: 1
+                                    and supports the EBS multi-attach feature 
+
+
+
+                                            HARD DISK DRIVE 
+THEY CANNNOT BE A BOOT VOLUME 
+ 125 Gib to 16Tib 
+
+they are throughput optimized HDD (st1)
+           they can be used for big data , data warehouse , log processing 
+           max throughput 500mibs - max iops 500
+
+cold hdd (sc1):
+       for data that is infrequently accessed (archived)
+       scenearious where lowest cost is important 
+

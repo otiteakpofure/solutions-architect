@@ -1,0 +1,12 @@
+the ebs multi-attach allows you to attach the same ebs volumes to multiple ec2 instance in the same AZ  which (the io1/io2 volume that has the multi attach volume ) performs this capability
+
+each isntacen will have full read and write 
+
+use case : achieve hihger appliction  availaibility in cluster linux applications 
+           applications that require concuerent read and write at the same time 
+
+
+note: you can attaceh the volumes to up to 16ec2 instacens at the same time 
+      it MUST use a file system that is cluster aware 
+      A clustered file system leverages multiple physical storage servers which simultaneously mount the file system so that it can be accessed and managed as one single logical system
+

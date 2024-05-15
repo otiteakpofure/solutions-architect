@@ -1,0 +1,19 @@
+how to encrypt an ebs volume 
+  data at rest is encrypted inside the volume 
+  all the data in flight moving between the insrance and the volume is encrypted 
+  all snapshots are encrypted 
+  all volumes created from thr snapshot are encrypted 
+  encryption and decryption are handled transparently 
+  it has minimal impact on latency 
+  ebs encryotion used AES-256 
+  
+
+  ENCRYPTING AN UNENCRYPTED EBS VOLUMES 
+  TO do this the following steops are needed to be taken;
+
+  - creat and EBS snapshot of the volume 
+  -  encrypot the ebs snapshot (using copy)
+  - create new sbs volumes from ths snapshot (the volume will also be encrypted)
+  - now yoy can attch the encryoted volume to the original instanbce 
+
+  
