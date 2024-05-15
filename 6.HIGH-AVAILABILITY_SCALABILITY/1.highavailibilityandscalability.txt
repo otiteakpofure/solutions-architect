@@ -1,0 +1,25 @@
+scalaiabilyt means an aappliction can handle loads by adapting 
+
+there are two kind of scalability
+ vertical scalability  (scle up/down)
+ horizonntal scalability (elasticity) (scale out/in)
+
+ vertical scalabiltn: means you needd to increase the zise of the isntance  used for database 
+ horizonntal scalability: means incrase the number of instances  used for w
+
+
+ non-distibute systems: database 
+
+ disriuted system: web applictions/modern applictions 
+
+
+                                      high availability
+high availability usually goes with horizonntal scalability
+it means you are running your applicarion in at leastr 2 data centers ( == avvailiability zones )
+the goal is to survice the data center loss 
+
+
+high availaibility can be passive which means    and van be active which involbes horizonal scaling 
+
+
+

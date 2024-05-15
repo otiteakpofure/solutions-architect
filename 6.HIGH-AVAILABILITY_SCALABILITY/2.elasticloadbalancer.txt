@@ -1,0 +1,44 @@
+load balancers helps to transfer traffic to the needed load balancers 
+
+why use load balaners ?
+
+expose only one single poitn of dns , it has health checks , provides ssl termination for your websites , enforce stickiness with cookies 
+, high availibilty across zones 
+
+
+why use ELB?
+An elastic load bbalancer is  a managed load balancer and its guaranteed by aws to be working , aws take care of upgraes , maintenance and high availabilkity , 
+provides only a few configuration of knobs 
+it cost lesss to set up your own load balanceer but it will be a lot more effort on yoyr end and it is integrated with many aws offferings/servcies 
+
+it is integrated with many aws services 
+
+
+HEALTH CHECKS 
+health checks are crucial for load balancer becuase they help to check if an ec2 instance is working or not 
+the health check is done on a port and route 
+
+if the ec2 instance does not respond with the code ok 200 , then the ELB will not send messges to the load balancer
+
+TYPES OF LOAD BALANCER ON AWS 
+
+1. classic load balancer : which are the (v1 - old generation)
+ (CLB)  good for http: https, tcp, ssl (secure tcp)  not in use anymore but ccan be used
+2.  applcition load balancer  (v2 -new generation): 2016 -ALB which are http, https, websocket
+
+3. Network Load Balancer (v2 -new generation) 2017 -NLB 
+     TCP ,TLS (SECURE TCP), UDP
+
+4. Gateway load balancer (2020 - gwlb)
+  operates at layer 3 (network layer) - IP protocol 
+
+
+  overall , it is recommended to use the newer generation load balancers as they provide more features 
+
+  some load balancers can be set up fpor private networj to talk to internal systems and public network to talk to 
+
+
+
+                                    LOAD BALANCER SECURITY GROUPS
+ 
+ 

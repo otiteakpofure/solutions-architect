@@ -1,0 +1,3 @@
+The appliction load balancer is a layer 7 load balancer (HTTP)
+load balancing to multiple HTTP applications aross machine and thise machines are under target groups 
+  
