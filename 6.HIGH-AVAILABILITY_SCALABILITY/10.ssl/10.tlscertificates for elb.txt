@@ -1,0 +1,18 @@
+SSL/TLS
+- An ssl certificate allows traffice between your clients and your load balancer to be encrypted in transit (in-flight encryption)
+- to encryt connection we can biy certififactes from public CA 
+- the load balancer users a x.509 certificate (ssl/tls server certificate)
+- certtificares are managers using ACM 
+- you can upload your own certificates 
+ 
+ you can set up and https listener 
+  but to do this you must specify a default certificate 
+  you can add an optional list of certs to support multiple domains 
+  client can use SNI (SERVER NAME IDENTIFICATION) to specify the hostname they reach
+  also it can support older ssl/tls certificates 
+
+
+     SNI (SERVER NAME IDENTIFICATION) 
+It helps to solve issues associated with loading mutliple ssl/tls certificates to serve multiple websites 
+it is  neewer protocol abd requires the client to indicate the hstname of the server in which , the server will then find the correct certificate or treturn the default one
+
