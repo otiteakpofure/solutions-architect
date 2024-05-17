@@ -1,0 +1,15 @@
+the gateway load balancer is used to deoloy 3rd arty applications and manage 3rd party fleet of network virtual appliances such as IDPS, and security systems
+at the network layer 
+
+all users traffic coming from outside will first reach the target groupof seuriry applicances before push the traffice to your application 
+
+operations at layer 3 
+
+it works at a singl enrty /exit point of view 
+it uses the geneve protocol on port 6081 
+
+target groups 
+
+they can be security appliance 
+ec2 instance and ip addresses which must be private 
+

@@ -1,0 +1,23 @@
+network load balancer is a layer 4 lod balancer which forward tcp & udp traffic on your instances 
+handles millions of request per seconds  and less latencty than the ALB 
+
+note: NLB has ONE STATIC IP PER AZ and supports assigning ELastic IP (helpful for whitelisti specific IP)
+
+A whitelist (allowlist) is a cybersecurity strategy that approves a list of email addresses, IP addresses, domain names or applications, while denying all others
+
+so you set the NLB and target groups and they are work the same as ALB 
+
+HEALTH CHECKs support by tcp, http and https protocol 
+
+
+
+
+                                                NETWORK LOAD BALANCER HANDS ON
+
+UNDER LOAD balancer 
+
+create NLB AND AZ enabled by an IP ADDRESS ASSIGNED BY AWS the NLB FOR THE NLB you can get an Ip address assigned to you or you can place and elasitc ip address 
+you can also create http request for nlb 
+
+you can also state the health status of the check 
+

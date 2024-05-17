@@ -24,6 +24,7 @@ TYPES OF LOAD BALANCER ON AWS
 
 1. classic load balancer : which are the (v1 - old generation)
  (CLB)  good for http: https, tcp, ssl (secure tcp)  not in use anymore but ccan be used
+ 
 2.  applcition load balancer  (v2 -new generation): 2016 -ALB which are http, https, websocket
 
 3. Network Load Balancer (v2 -new generation) 2017 -NLB 

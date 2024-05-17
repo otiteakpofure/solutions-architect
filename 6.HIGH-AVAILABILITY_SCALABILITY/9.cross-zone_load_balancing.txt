@@ -1,0 +1,14 @@
+                                          cross_zone load balancing
+                                          with corss zone load balacing , traffic is sent to various ec2 instances in variious 
+
+                                          without cross zone balancing 
+                                          rhis one is when the load balancer is manintaine equal trnafer of traffic in each case 
+
+                                          ALB 
+                                          BY DEFEAULT CROSS ZONE LOAD BALANCING 
+
+
+                                          nlb and GLb 
+                                          no cross zone load balancing by default and it can be enabled
+
+                                          

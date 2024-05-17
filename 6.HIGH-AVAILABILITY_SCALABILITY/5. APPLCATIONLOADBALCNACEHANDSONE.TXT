@@ -1,0 +1,28 @@
+LAUNCHIGN A LOAD BALANCER 
+1. create an isntance 
+2. then select the type of load balancer you want 
+3. and then put all these ec2 instances in a target group and include them as pending below 
+
+
+
+
+advanced concepts on Aplication ooad balancer 
+
+NETWORK SECURITY 
+
+IT IS GOOD TO ACCESS EC2 INSTANCE THROUHG YOUR LOAD BALANCR 
+
+in setting the security 
+
+
+
+    appliction load balancer rules 
+under listeners 
+check under listeners rules , under listener rules you can add rules and make it as complex as we want 
+
+under oistener rules we can conditions 
+
+what we want to filter into the client request for example if a client want to access path to areas of the application  
+
+and then define actions later on and set the priority of the rule  and as well setting rules with the highest priortity to win for example if you set a rule with 
+the prioority of 5 the rul will be first executed

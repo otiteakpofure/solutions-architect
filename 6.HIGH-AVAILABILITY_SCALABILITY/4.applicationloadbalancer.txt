@@ -1,0 +1,28 @@
+                                               Application Load Balancer (v2)
+application load balancer is layer 7 only (HTTP)
+allows you to route alongside mulitple http application across varipus http machine called target groups 
+allows load balancing to multiple applicatiosn on the same machine ( containers)
+support for http/2 and websocket 
+also enable routing tables to different target groups : routing baed on path in URL, routing based on hostname in urla , routing baeed on query string , headers 
+
+****alb are also great for micros services & container-based applications 
+
+
+also has port mapping feature to redirect to a dynamic port in ECS 
+ SUPPORT REDIRECT FROM 80 TO 443 
+
+
+TARGET GROUPS 
+Can be ec2 instances  (managed by an auto scaling group) - HTTP 
+can be ecs tacks  (MANAGED by ecs itself) - HTTP
+can be lambda functions - http request in translated into  json event 
+ip address 
+
+
+                                   QUERY STRINGS/PARAMETERS ROUTING 
+YOU GET A FIXED HOSTNAME FOR THE LOAD BALANCERS 
+THE APPLICATION DO NOT SEE THE IP OF THE CLIENT DIRECTLY 
+  THE True IP of the client is inserted in the header x-forwarded-for 
+   we can also get port (-forwarded-port) and proto (x-forwarded-proto)
+
+NOTE:  when a application talks to a load balancer the private ip address of the load balancer is talsk to the ec2 instances 
