@@ -16,3 +16,23 @@ SSL/TLS
 It helps to solve issues associated with loading mutliple ssl/tls certificates to serve multiple websites 
 it is  neewer protocol abd requires the client to indicate the hstname of the server in which , the server will then find the correct certificate or treturn the default one
 
+NOTE: IT ONLY WORKS NEWER GENERATION FOR ALB , NLB AND CLOUD FRONT 
+
+
+
+
+                                          SSL CETTIFICATINS 
+
+TO ENABLE SSL ADD A LISTENERS AND UNDER THe listener details and under the secure listener settings then set a ssl certificate 
+
+
+
+
+                                  ELB - CONNECTION DRAINING 
+IT HAS TWO NAMES IT CALLED 
+ CONNECTION DRAINIG WHEN USING CLB 
+ DEREGISTRATION DELAY WHEN USING ALB AND NLB 
+
+ CONNECTION DRAINING OR DEREGISTRATION DELAY IS the process of stopping instances or removing registration from instance and if users are connected to these instances all their connections will be complted before communiction is stopepped and if the users are not connected at all new connections will be formed on new instances and not the one which has be deresgoietered 
+
+ 

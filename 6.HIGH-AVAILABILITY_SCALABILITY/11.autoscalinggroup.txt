@@ -1,0 +1,30 @@
+ AUTOSCALING GROUP 
+
+
+ the autoscaling group allows ec2 instances to meet the needs of web applications 
+ this is done SCALING OUT (ADD EC2 INSTANCES )
+ SCALING IN (REMOVE EC2 INSTANCES)
+
+ YIU CCAN CREATE POLICIES TO ENSURE THAT ASG groups ensure instanes 
+ when one ec2 instance fail another can rise up '
+ and they are free 
+
+ you autoscale with a load balancer 
+
+
+  autoscaling group with attributes 
+   A launch template withing your asg this can describe how they can launch ec2 instances, 
+
+your asg can have min size , max size , scalling capccity and policies to describe the ec2 instances 
+
+Auto scaling - cloudwatch alarms & scaling 
+
+it is possiblr to scaled and ASG based on cloudwatch alarms 
+for example , using cloud watch alarmas we can know when to scale out or in 
+
+
+
+
+                                                           AUTOOSCALING GROUP HANDS ON 
+when ctreating asg ensure that a launch template is also created , you can make a mix of ec2 instances type as dependent by you 
+and yoy can set scaling policies if you wish 
