@@ -27,4 +27,45 @@ for example , using cloud watch alarmas we can know when to scale out or in
 
                                                            AUTOOSCALING GROUP HANDS ON 
 when ctreating asg ensure that a launch template is also created , you can make a mix of ec2 instances type as dependent by you 
-and yoy can set scaling policies if you wish 
+and yoy can set scaling policies if you wish  and they yo can set the asg group size 
+you can register instances in target group through asg 
+
+
+
+                                       AUTO SCALING GROUPS - SCALING POLICIES 
+DYNAMIC SCALING: in this category we have a 
+
+target tracking scaling; 
+                 simple to set up 
+
+            the idea is that a metric is defined and also a target value and when it is reached thre value kick 
+            for example,  i wamt the average asg cpu to be around 40% 
+
+and the asg will scakle out or in 
+
+simple/step scaling 
+
+   this is a kind of scaling that happens when we want to add some ec2 instances when a certain range is reached 
+   for example when a cloudwatch alarm is trigged (example CPU > 70%) , then add 2 units 
+
+schedule scaling 
+   this is when you anticipate scalong and then you scaled when it is met 
+
+preicitve scaling 
+ it is whn you can predict what you can use anad then aws prodvides rersources based of these approach 
+
+
+
+         GOOD METRICS TO SCALE ON 
+
+THIS IS baedd of what your appliction does but some of them includes 
+
+cpu usage 
+network usage 
+number of request to each ec2 insance which now determines whethet to increase them or reduce them 
+any custom metric you set as well 
+
+ ASG -COOLDOWN PERIOD 
+ After each scaling or reducing , there is a cooldown period of 300 seconds and this can slw down your ork in aws to snrue this is reduced ensure that all 
+ ec2 instances used are configuired properly 
+     
