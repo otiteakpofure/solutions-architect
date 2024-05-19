@@ -1,0 +1,8 @@
+Discussing advanced concepts of Aurora 
+
+                            AURORA REPLICAS - AUTO SCALING
+ in autosaclling for example you are getting alot of read request to your database but by using aurora autoscaling , it will autoscaled to meet the request 
+ for meeting the reader endpoint
+
+                              aurora- custom endpoint
+ 

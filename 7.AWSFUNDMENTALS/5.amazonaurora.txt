@@ -1,0 +1,63 @@
+Aurora is a properitory technology for AWS (NOT OPEN SOURCED)
+postgres and mysql are both supported as aurora db (that means your drivers will work as if aurora was a postgres or my swl database)
+auro is aws optimized anc claims 5X performance improvement over mysql on rds and over 3x performance of postgress on rds 
+aurora storage automatically grows in increment of 10 gb up to 128tb
+aurora can have up to 15 replicas and the replication process is faster than my sql (sub 10ms replicas lag)
+failover in aurora is instantaneuos . its HA active 
+aurora cost more than RDS (20% more) buts its more efficient 
+
+
+                         AURORA HIGH AVAILABILITY AND READ SCALING 
+
+6 COPIES OF YOUR DATA ACROSS 3 AZ:
+  4 copies out of 6 needed for writes 
+  3 copies out of 6 need for reads 
+  self healing with peer-to-peer replication 
+  storage is striped across 100s of volumes 
+
+one Aurora instance takes write (master)
+Automated failober for master in less than 30 seconds
+
+master + up to 15 Aurora read replicas 
+support for cross region replication 
+
+
+                                      AURORA DB CLUSTER
+
+In aurora working as a cluster , it invloves various things
+
+1. a writer endpoint is provided and this writer endpoint is what people use to talk to their clients 
+2.  when the master db fails regardless,  the client can still talk to the writer endpoint 
+
+
+reader enpooint: this allows the client to connect to the read replicas allowing for load balancing 
+
+ featire of aurora 
+ - automatic failover
+ - backup and recovery 
+ -isolation and security 
+ - industry compliance 
+ - advanced monitioring 
+ backtrack - allow you resstored data at any point in time 
+ routine maintenenac 
+
+
+
+
+                                                        AMAZON AURORA DB HANDSON 
+
+When creating aurora capacity range, you need to choose serverless so this is a secod time of instanc which a
+
+when the aurorar databses is created there is usually , writer instance and the reader instance 
+
+these instances are endpoint and it what the client will use to connect to the endpoint of the aurora database 
+
+NOTE: WE CAN ALSO ADD MORE READERS and also creatd a cross region replica 
+
+we can also creata a policy whicb
+
+
+NOTE: YOU CAN ADD AWS REGION WHEN YOU SET THE DATABSES GLOBAL 
+
+
+        
