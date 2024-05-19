@@ -1,0 +1,30 @@
+read rrplicas allows you to increas th number of reads that your application needs to run its datbase services for example, you have an application that has too many reads and youw ant 
+that application to be consitent the use of read replicas allows you to read frommthr main databses while creating other database services
+
+in this situation there can be a manindatabses and then theri replicas databses which is aynchronously connected to the main databses and therefore 
+thius databses can klater be promoiited to their own databasea as needed.  they cajnbe within the same az , cross az or cross region  
+
+
+RDS READ RERPLICAS
+
+THE REASON FOR READ REPLICEFS IS THAT FOR EXAMPLE YOU HAVE  databses that peforms various read operations  and now yiou want to perform another operation 
+on that database whic may destroy the way the databse work or the way the databse manage operations you can create a read replicas to still allow the databse work while the new read replice database answers your new request 
+
+this read replicas only WORK for SELECT Wwhihc is equals to READ STATEMENTS and not insert, update or delete statements 
+
+RDS READ RERPLICAS - NETWORK COST 
+IN READ replicas, if you are transfer replices within two different AZ under the same reagion for read processes it will be free 
+but if you are sending read replicaes from one region to another , then it will cost 
+
+
+RDS READ RERPLICAS - (DISASTER RECOVERY)
+
+note : mulit AZ is uded for disaster recovery 
+
+yu can set up your read replicas to be in multi AZ  and as such transfer data between various AZ 
+
+
+HOW TO MAKE A RDS FROM SINGLE AZ TO MULTIAZ 
+
+TO DO THAT CLICK ON MODIFY ON THE DATABASE AND CHANGE THE TO MULTI AZ 
+

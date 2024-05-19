@@ -1,0 +1,20 @@
+                                    RDS CUSTOM 
+NOTE: with rds we do not have any access to any underlying OS or any customization, but now with rds custom 
+
+and the rds CUSTOM is for RDS oracle and microsfot sql server 
+
+with rds custom we can do the following
+- connect using ssh 
+- change configiration setting using the os and underlying database 
+- intsall patches 
+
+
+NOTE: To perform RDS custom , it is better we do the following 
+   a. deactivate automation mode 
+   b. take a snapshot of the database
+
+
+                                              RDS VS RDS CUSTOM
+        RDS: gives entire database and the OS to be manageed by aws 
+        rds CUSTOM: full admin access to the underlying database and OS 
+

@@ -1,0 +1,26 @@
+ you select rds and created databse engine and choose which you want 
+
+ STANDARD CREEATE 
+ EASY CREATE 
+
+ FOR CONNECTIVITY 
+ YOU CAN CHIOSE EITHER
+
+ -connect to an ec2 computre resources -  used to specify is their is connectivity with a specified ec2 instance with the rds daatabse 
+ - do not connect to one 
+
+
+ backup window 
+
+ referes to the time in which the backuo can be done 
+
+ sql electron is a sql connector client to connect to the sql database 
+
+ you connect to the rds daatabse using sql electron 
+
+ and then we can created a read replica from the database 
+
+ and as well you can take snapshot and restore to a point in time 
+
+
+ NOTE: if you want to delete the database remove the protection execution settings 

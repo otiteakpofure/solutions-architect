@@ -1,0 +1,31 @@
+RDS = Relationla database services , 
+ it is a managed DB SERVICES FOR DB using SQL as a query language
+ it allwos you to create databases in the cloud that are managed by AWS 
+  it includes 
+  a. postgres
+  b. mysql
+  c.mariadb
+  d.oracle
+  e.microsoft sql server
+  f.IBM DB2
+  G. AURORA (aws PROPERTIETY DATABASE)
+
+                          ADVANTAGE OF USING RDS THAN INSTALLING A DATABASE ON EC2 
+It has the following advamtages 
+1. automated provisions , OS patching 
+conitnuous backups and restore to soecifi timestamps
+3. monitiring dashboards
+4. read replicas for improved read performance
+5. multi AZ setup for DR 
+6. maintainancee for windows for upgrades 
+7. scabiliyt capability 
+storage backing up 
+
+NOTE: YOU CANOT SSH INTO INSTANCE BACKED BY RDS 
+
+
+                                           RDS - AUTO SCALING 
+YOU CAN SCALED YOUR DRS FOR THE GIVEN REASONS 
+WHEN YOUR stirage is alomst complete and instead of bothrering for scalibility the ece2 instancs are scaled as required , and to ensure that 
+you can also set a maximum threshold for your db storage and also to automatically modify storage based of given properites 
+
