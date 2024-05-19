@@ -68,4 +68,5 @@ any custom metric you set as well
  ASG -COOLDOWN PERIOD 
  After each scaling or reducing , there is a cooldown period of 300 seconds and this can slw down your ork in aws to snrue this is reduced ensure that all 
  ec2 instances used are configuired properly 
+ and in thos period aws does not add or removed any instance 
      
