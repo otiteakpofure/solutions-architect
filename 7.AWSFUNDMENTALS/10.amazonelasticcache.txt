@@ -1,0 +1,80 @@
+A cookie is a file that stores information that identifies an entity. Meanwhile, caching saves parts of a website in order to help it load faster on your next visit
+The same way RDS is to get managed relational databases 
+Elasticache is to get managed redis or memached 
+cahces are in-memory databases with really high performance , low latency 
+helps reduce load off of databases for read intensive workloads 
+helps makes your appliction stateless 
+aws takec care of os maintenance / patching , optimizations, setup , configuration, monitoring , failure recovery and backups 
+using elastic cache INVOLVES HEAVY CODE APPLICATION CODE CHANGES 
+
+
+                                    solution architecture - DB CACHE 
+Applications queries elastic cache and not the databse for queeires 
+if an appliction has not cached an older queires before , it alks to the databse but if it has cached a query before it goes to the elastic cache 
+instead of the DB 
+
+
+                              USER SESSION STORE 
+
+IN user session store under elastic cache is this a user logs inot the appliction then information of the user is stored 
+THIS IS HOW IT WORKS 
+- The user logs into any of the Application
+- the appliction writes the session data into elastic cache 
+- the user hits another instance of our applicaction
+- the instance retrieves the data and the user is already logged in 
+
+
+
+                                          ELASTIC CACHE  REDIS VS MEMCHACHED 
+
+THE DIFFERENCE BETWEEM REDIS AND MEMCHED IS THAT REDIS SUPPROTS 
+-high vaialbilyt 
+- data restoration 
+- persistence
+- data backup
+- read replicas to scale  reads and high availability 
+
+
+                                                   ELASTIC CAHCE HANDSON
+
+IN THIS STEP YOU DESIGN YOUR CACHE
+
+                                      ELASTIC CACHE SECURITY 
+
+Elastic cache supports IAM authentication for REDIS 
+IAM policies on elastic cache are only used for AWS API-level security 
+
+REDUS AUTH 
+- you can set a " password/token" when you create a redis cluster 
+-  this is an extra level of security for your cache (on top of security groups)
+- SUpport SSL in flight encryption
+
+MEMCHACHED 
+  support SASL-based authentication 
+
+
+  PATTERNS FOR ELASTIC CACHE
+  LAZY LOADING: is when all the red data are downloaded from a website or internt serviecs and them they become okd under the cache table 
+  WRITE THROUGH: Adds or update data in the cache when written to a DB (no stale table)
+  SESSION STORE: store temporary session data in the cache when (using ttl features)
+
+
+
+  REDIS USE CASES 
+  - CREAING GAMING LEADERBOARDS 
+  - redis does this through its sorted sets 
+
+
+
+
+  LIST OF PORTS TO BE FAMILIAR WITH 
+
+  SFTP AND SSH SHARE SAME PORTS 
+
+
+  postgreSQL : 5432 
+  MySQL:3306 
+  Oracle RDS : 1521
+  MSSQL Server:1433 
+
+  

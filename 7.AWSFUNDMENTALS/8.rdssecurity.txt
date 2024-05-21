@@ -1,0 +1,20 @@
+RDS & AURORA SECURITY 
+
+At-rest encryption 
+- the database master & replicas encryption using aws kms -must be defined as launch time 
+- if the master is not encrypted the read replicas cannot be encrypted 
+- to encrypt and unencrypted database , you have to go throigh the DB snapshot & restore as encrytoed 
+
+
+IN-FLGHT ENCRYPTITON
+- EACH DATABSE WHETHER RDS OR AURORA HAS in-flight encryption of by default and so they can be encrypted
+
+IAM authentication
+
+- IAM roles to connect to your database 
+
+securty groups 
+
+control network access to your RDS/aurora DB 
+
+audit loga can be sent to cloudwathc for longer retention 

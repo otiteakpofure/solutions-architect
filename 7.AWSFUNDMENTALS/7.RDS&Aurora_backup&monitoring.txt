@@ -1,0 +1,54 @@
+RDS BACKUPS 
+a. automated backups 
+ - daily full backups of the database 
+ - transactions logs are backed-up by RDS every 5 monutes 
+ - ability to restore at any poitn in time (from oldest backup to 5 minutes ago)
+ 1 to 35 days retention , set 0 to disable automated backups 
+
+b. Manual DB snapshots 
+- manually trigged by the user 
+- retention of backup for as long as you want 
+
+NOTE: AUTOMATED BACKUPS expire and manual snapashots do not expire 
+
+
+
+AURORA BACK UPS 
+ A. Automated backups 
+  - 1 to 35 days (cannot be disabled but RDS can be disabled)
+   - point-in-time recovery in that timeframe 
+
+MANUAL DB Snapshot 
+- manually trigged by the user 
+- retention of backup for as long as you want 
+
+
+RDS & AURORA RESTORE OPIOTS
+
+Restoring a RDS /Aurora backup or a snapshot creates a new database 
+
+RESTORING MSQL RDS Database from s3 
+ -create a backup of your on-premises databses 
+ - store it on amazon s3 (object storage)
+ - restoring the backup file into a new RDS instance running mysql
+
+ RESTORING MYSQL AURORA CLUSTER FROM S3 
+ - create a backup of your on-premises databses using percona xtrabackup 
+ -store the backup file on amazao s3 (object storage)
+ -restore the backup file on to a new aurorar ckuster running mysql 
+
+
+
+ AURORA DATABASE CLONING 
+ FOR EXAMPLE , YOU HAVE AN AURORA DATABASE AND you want to clone it into a new db so that the original datanse wont be hruts these have the following advantages 
+ - it is faster snapashort and easy to restore 
+ - it uses a cipy-on-write protocol 
+   -iniitirally the new DB cluster uses the same data volume as the original DB cluster(fast aned efficient - no copying is needed)
+   - when updates are made ti the new DB cluster data, then adddional storage is alloated and data is copied to be seperated 
+
+   it is very fast and cost effective 
+
+
+   NOTE: IT IS USEFUL FOR CREATING A STAGING DATABASE without harming the original DB cluster
+
+   
