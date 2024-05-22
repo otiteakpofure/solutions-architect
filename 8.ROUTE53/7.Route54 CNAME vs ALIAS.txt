@@ -1,0 +1,39 @@
+AWS resources such as (load balancer, cloud front) expose an AWS hostname 
+for example , thishostname.com ==== thishostname.com
+
+CNAME 
+This points a hostname to any other hostname (for exampel , thishostname.com ==== thishostname.com)
+IT ONLY WORKS FOR NON ROOT DOMAIN such as (myname.school.com) this is not a root domain but this is an example of a root doman (school.com)
+
+
+alias
+THIS points a hostname to an AWS  resources (app.mydomain.com === blabla.amazonaws.com)
+this only works from root domain and non root doman such as the example given above 
+free of charge 
+native heatlh check in details 
+
+ so for the alias , after specifyin ght recordname which is a domain name and the type of record in the value , you specify anAWS resource 
+
+
+ THE TOP NODE OF A DNS IS SIMPLE .COM 
+ unlike cname record , it can used for the top node dns namespoace (zone apex )
+
+ NOTE: Alias records is always of type A/AAAA for AWS resources (IPV4/IPV6)
+       YOU also cannot set the ttl becauase it is done by route 53 
+
+        
+
+         ALIAS RECORD TARGETS
+
+         - ELB 
+         -CLOUD FRONT DISTRIBUTION
+         - ELK ENVIRONMENTS 
+         - API gateway 
+         - s3 WEBSITES 
+         - VPC interface endpoints 
+         - Global Accelerator Accelerator
+         - route 53 record in the same hosted zone 
+
+you cannot set an alias for an ec2 dns name 
+
+ensure when settign alias click on alias 
