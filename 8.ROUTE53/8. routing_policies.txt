@@ -1,0 +1,41 @@
+ route 53 routing policices define how route 53 responds to dns queries 
+  routing 53 supports the following routing policies 
+   - simple  -  route traffic to a single respurce = goinging to a single ipaddress NOTE: IF MULTIPLE IPADDRESSES ARE ASSOCIATED THE CLIENT WILL PICK ONE WHICH IS 
+                the clients wants for example , having 3 ipaddress for one single dns name 
+                 you cannot associated this with health checks 
+
+                 to do this 
+                 create a record 
+                 and then choose th routing  this can have more than one ip address    
+
+
+
+   -weighted -  controls the % of the requests that go to each resources 
+             -  assign each records a relative weight 
+                traffic (%) = weight for a specific record / sum of all the weights for all records 
+        - weights do not need to sum up to 100 
+        - DNS records must habe the sanem name and type 
+        - can be associaetd with health checks
+        - use cases: load balanceing between regions , testing new applicaiton versions 
+        ASSIGN a weiht to 0 and this means the recods wil stop sending traffic to a resource 
+        - if all records have weight of 0 , then all records will be returned equally 
+
+                                  HOW TO DO THIS 
+        - create a record and choose the routing policy and state the weight to the range of ip address you want 
+        - in creatig these records , varuious weight classes will be given 
+
+   - failover -   
+   - latency based : this is used for when you want to redirect traffic to the lowest latency to a resource closest to us
+                   - super helpful when latecny is the major priority 
+                   - latency is based on traffic between aws users and the aws regions 
+                   - uses may be rediretced to varius rregions based of its latency 
+                   - can be associated with health checks 
+
+                   
+                   
+      - 
+
+   - geolocation
+   - multi-value answer 
+   - geoproximity ( using route53 traffic flow feature)
+
