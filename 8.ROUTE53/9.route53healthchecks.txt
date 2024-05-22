@@ -28,3 +28,9 @@ this health check is done when there is a parent health check and there are chil
 -  specify how many of the health checks need to pass to make the parent pass
 - usage: perform maintenance to your website without causing all health checks to fail 
 
+HEALTH CHECKS - private hosted zones 
+
+the health checks cannot access private networks and as such to check private networks, You can create a  cloudwatch Metric and 
+associated a cloudwatch Alarm , then create a health check that checks the alarm itself
+
+ 

@@ -24,7 +24,15 @@
         - create a record and choose the routing policy and state the weight to the range of ip address you want 
         - in creatig these records , varuious weight classes will be given 
 
-   - failover -   
+   - failover(Active - Passive)- 
+            In the failover , there are two instances 
+            primary - 
+            secondary( disaster recovery)- IN THIS THERE ARE TWO EC2 ONE THE PRIMARY ECS AND THE SECOND ONE WHICH ALLOWS FOR FAILOVER     
+
+
+
+
+
    - latency based : this is used for when you want to redirect traffic to the lowest latency to a resource closest to us
                    - super helpful when latecny is the major priority 
                    - latency is based on traffic between aws users and the aws regions 

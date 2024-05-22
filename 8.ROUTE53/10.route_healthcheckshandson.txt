@@ -1,0 +1,10 @@
+ when creating an healthcheck you can use either an Ipaddress or a domain name 
+ and create a standard configiration and you can choose string matching or not 
+ you create health checks for all your isntances 
+
+ and you can set a calculated healthcjecks 
+
+
+ the cloudwatch can be used to monitor the health of private instances 
+
+ 
