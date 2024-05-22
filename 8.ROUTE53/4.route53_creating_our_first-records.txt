@@ -1,0 +1,4 @@
+under the hosted zones and click on records and the value is the ipadddress value 
+then you install bind tools 
+sudo yum install -y bind-utils
+

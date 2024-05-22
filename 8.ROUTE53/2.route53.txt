@@ -1,0 +1,51 @@
+                          amazon route 53 
+A highly available , scalable fully managed and authorative DNS 
+ -authorative = the customer (you) can update the DNS records 
+
+ rout53 is also a dmian register 
+
+ abilty to check the health of the resources 
+
+ the riutr 53 is a refrence to the traditional dns port 
+
+           ROUTE 53 - RECORDS 
+how you want to route traffic for a domain 
+
+each record contains: 
+domain/subdomain name 
+record type e.g  A, AAAA, CNAMe 
+value of the record 
+routing policy - how route 53 responds to queries 
+TTL - amount of time the record cached at DNS resolvers 
+
+
+route 53 support following dns record types 
+
+MUST KNOW - A/AAA/CNAME/NS
+ADVANCED - CAA/DS/MX/NAPTR/PTR,SOA,TXT,SPF,SRV 
+
+
+RECORD TYPES 
+A - maps a hostname to an ipv4 address
+AAAA-maps a hostname to an ipv6 address
+CNAME-maps a hostname to anOTHER HOSTNAME whilt the target is a domain name which must have an A or AAAA record 
+      cant create a CNAME record for the tip node of a DNS namespace (zone Apex ) for example you cant create a CNAME record for EXAMPLE.COM 
+    BUT you can create a CNAME record for www.example.com
+
+NS - These are the servers in which we talk to help us locate ip addresses 
+
+                    ROUTE 53 - HOSTED ZONES
+A container for records that define how to route traffic to a domain and its subdomains 
+
+PUBLIC HOSTED ZONES - contained records that specify how to route traffic on the internet (public domain names) man.apple.com 
+PRIVATE HOSTED ZONES- contains rcords that specify how you route traffic with one or more VPCS (private domain names) for example private.private.private 
+                    and it is only accesible within a private network
+
+you pay $0.50 per month 
+
+
+
+
+
+
+

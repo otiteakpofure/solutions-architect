@@ -1,0 +1,17 @@
+DNS TERMINOLOGIES
+
+Domain registrars: go daddy or amazon route 53 
+DNS records: A,AAAA, CNAME 
+ZONE FILE: CONtains the dns records 
+name server : authoritative and non.authoritative name servrrs 
+tld :.com,.gov
+SLD: GOOLE.COM , AMAZON.com   
+
+
+http://api.www.example.com.
+
+. = root 
+.com = tld
+example = SLD 
+api= FQDN (Fully Qualified Domain Name)
+

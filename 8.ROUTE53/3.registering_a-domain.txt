@@ -1,0 +1,5 @@
+to regsiter a domain 
+
+a. click on register domain and click  and register the domaain
+b. after registerin the domain , click  on hosted zones to check the domain that has been registered 
+c. 

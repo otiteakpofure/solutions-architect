@@ -1,0 +1,19 @@
+                        ROUTE53 TTL 
+The DNS TTL desribes all steps to ensure resolvers cache website for a given specific time and after the time the dns can request again 
+for example , if you set your tll to 24 hours that means the dns resolveers willcaheck only records for that whole 24 hours and for instance 
+you make changes to a website ebcause its still under 24 hours the resoursc wont be updarted till the 24 houirs passes 
+
+TYPES OF TTL 
+
+high ttl -24 hour 
+-Less traffic on route 53 
+- Possibly outdate records 
+
+LOW TTL - 60 seconds
+- More traffic on route 53
+- records are outdate for less time 
+- easy to change records 
+
+except for alias records , ttl is mandatory for each DNS record 
+
+in creating a ttl ensure that the record name is pointed to the adddress  in which the ip address will be pointed to 
