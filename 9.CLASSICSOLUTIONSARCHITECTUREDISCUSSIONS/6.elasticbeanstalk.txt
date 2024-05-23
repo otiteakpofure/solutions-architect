@@ -1,0 +1,17 @@
+                                     elasitc beanstalk 
+1. Elastic Beanstalk is a developer centric view of deploying an appliction on aws 
+2. what it does that it uses already created components by developer instead of developers re-using them again and creating them again 
+3. it is a managed service 
+- it automatically handsle capacity provisioning , load balancing , scaling , application health monitoring and instance configuration 
+ NOTE: just the appliction code is the responsibilit of the devloper 
+
+
+                                     ELASTIC BEANSTALK COMPONENTS
+ Application: collection of elastic beanstalk components (environments , versions,configurations)
+ Application version: an iteration of your appliction code 
+ environment 
+  collection of AWS resources running an application version (only one aplication version at a time)
+  TIERS : webserver envirronment tier & worker environment tier 
+  you can create mutliple environments (dev, test , prod )
+
+  

@@ -1,0 +1,13 @@
+         INSTATIANTING APPLICATION QUICKLY 
+ USE A GOLDEN AMI : WHICH INVOLVES INSTALLING AND DEVELOPING RESOURCES on a particular ami 
+
+   and after doing this, the subsequent applictions will be generated from this developeD AMI 
+
+   BOOTSTRAPING USER DATA: for dynamic configuration, 
+
+   getting a mix of golden ami and user data is called elastic beanstalk which is termed HYBRID 
+
+   SNAPSHOT ALLOWS PROCESSES TO START FASTER 
+
+   
+             

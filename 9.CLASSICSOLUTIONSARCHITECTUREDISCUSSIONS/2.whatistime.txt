@@ -1,0 +1,12 @@
+what is time.com 
+
+allows people to know what time it is 
+
+the 5 pillars of a well arhictectured framwork includes the following:
+
+cost 
+performance 
+reliability 
+security 
+operational excellence 
+

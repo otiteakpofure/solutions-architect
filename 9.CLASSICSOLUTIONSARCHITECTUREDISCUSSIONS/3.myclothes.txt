@@ -1,0 +1,12 @@
+  cookies must be validated
+  cookies must be less than 4kb 
+
+  laxy loading allows you to load information from elastic cache 
+
+  3-tiers of web applications 
+
+  - WEB tiers
+  -CLIENT tiers
+  -DATABASE TIERS 
+
+  

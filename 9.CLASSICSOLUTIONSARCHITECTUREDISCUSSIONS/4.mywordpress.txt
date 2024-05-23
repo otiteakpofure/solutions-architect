@@ -1,0 +1,1 @@
+eFS craates ENI AND THESE ENI is attached to these ecs2 insrtances   
