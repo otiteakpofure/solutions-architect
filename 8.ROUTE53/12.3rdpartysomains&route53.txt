@@ -1,0 +1,5 @@
+domain resgister vs dns service 
+
+you can buy a domain name from a 3rd party resgister 
+
+for example , you want to buy a domain name in godaddy.com and register the dns service in aws under the nameserver in the dns records change it to aws services after creating a public hosted zone in aws 

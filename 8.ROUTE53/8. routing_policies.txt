@@ -27,8 +27,7 @@
    - failover(Active - Passive)- 
             In the failover , there are two instances 
             primary - 
-            secondary( disaster recovery)- IN THIS THERE ARE TWO EC2 ONE THE PRIMARY ECS AND THE SECOND ONE WHICH ALLOWS FOR FAILOVER     
-
+            secondary( disaster recovery)- IN THIS THERE ARE TWO EC2 ONE THE PRIMARY ECS AND THE SECOND ONE WHICH ALLOWS FOR FAILOVER 
 
 
 
@@ -43,7 +42,24 @@
                    
       - 
 
-   - geolocation
-   - multi-value answer 
-   - geoproximity ( using route53 traffic flow feature)
+   - geolocation   -  This is based on where the user is located. note: you should create a default record in cases where there no matcch to any location 
+
+
+   - multi-value answer  - used when you want to route traffic to multiple resources , when the client request for resources up to 8 records are retur
+                           
+
+
+   - geoproximity ( using route53 traffic flow feature)- route traffic based of the user location and the users cloeness to the resources 
+                                                         to do this you expand the bias result based of the users closeness 
+                                                         with this policy a nu,ber call bias is used to shift users to the resources 
+
+                                                         to allow user shift to partuular respurce you increase the bias number 
+                                                         and to remove users from resourcs you reduce the bias number 
+
+
+                                                         resourcs can be aws owned or not ( use logntiude and latitide )
+
+IP BASED - rotuing is based on clients IP address 
+          you provide a list of CIDR for your clients and the corresponding endpoints/locations 
+
 
