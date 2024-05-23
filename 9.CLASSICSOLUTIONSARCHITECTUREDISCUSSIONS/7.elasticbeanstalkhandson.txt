@@ -1,0 +1,17 @@
+using elastic beanstalk allwos for two environment 
+
+webserver environment:  run a websiute , webapplicaiton or wen api  
+worker environment: run a worker appliction for work task 
+
+you can choose the platform you want 
+
+then you configure service which are the iam roles 
+and create a new srbice role  and create an ec2 instnace profile 
+and add webtier, workertier and docker
+
+NOTE : all resources created by elastic beanstalk are created by clodufront 
+
+for rolename ensure there are hyphens in bwteen   
+
+cloudformation is used to deploy stack for any kind of infrastructure
+

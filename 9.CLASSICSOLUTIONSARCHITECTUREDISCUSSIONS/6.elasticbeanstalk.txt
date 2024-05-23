@@ -1,17 +1,41 @@
-                                     elasitc beanstalk 
+                                     ELASTIC BEANSTALK 
 1. Elastic Beanstalk is a developer centric view of deploying an appliction on aws 
 2. what it does that it uses already created components by developer instead of developers re-using them again and creating them again 
 3. it is a managed service 
-- it automatically handsle capacity provisioning , load balancing , scaling , application health monitoring and instance configuration 
- NOTE: just the appliction code is the responsibilit of the devloper 
+- it automatically handle capacity provisioning , load balancing , scaling , application health monitoring and instance configuration 
+ NOTE: just the appliction code is the responsibility of the devloper 
 
 
                                      ELASTIC BEANSTALK COMPONENTS
- Application: collection of elastic beanstalk components (environments , versions,configurations)
- Application version: an iteration of your appliction code 
+ 1. Application: collection of elastic beanstalk components (environments , versions,configurations)
+ 2. Application version: an iteration of your appliction code 
  environment 
-  collection of AWS resources running an application version (only one aplication version at a time)
-  TIERS : webserver envirronment tier & worker environment tier 
-  you can create mutliple environments (dev, test , prod )
+3. collection of AWS resources running an application version (only one aplication version at a time)
+4. TIERS : webserver envirronment tier & worker environment tier 
+                    you can create mutliple environments (dev, test , prod )
 
-  
+5.     webserver tier vs worker tier
+a. webserver tier:
+                  In the webserver tier all users can access the application using the ELB  
+
+
+b. worker tier:  
+                        In the worker tier no user can access the applicaiton messages are sent to the application using and 
+                        SQS queue which forwards the message to an ec2 insrance and the ec2 instrance are the workers. 
+
+they are scaaled based on a the number of sqs messages 
+
+
+NOTE: you can push messages from the webserber environment to the worker environment 
+
+                             ebs beanstalk deployment modes 
+    
+there are two deployment modes 
+
+1. SINGLE INSTANCE GREAT FOR DEV 
+
+ In this deplpyment mode , there is an elastic IP , EC2 instance and a rds master based on the single instance 
+
+ 2. HIGH AVAILABILITU WITH LOAD BALANCER GREATE FOR PRODUCTION 
+
+ In this deployment mode there is an ALB which talsj to instance in various AV zones and there is and RDS master and read replicas 
