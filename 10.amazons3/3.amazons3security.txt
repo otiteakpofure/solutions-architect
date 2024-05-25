@@ -1,0 +1,20 @@
+user-based:
+IAM policies: which API calls should be allowed for a specifi user from IAM 
+
+Resource Based:
+Bucket policies : bucket wide rules from the s3 console- allowd across account 
+Object ACL: finer grain (can be disable)
+Bucket ACL: less common(can be disabled)
+
+NOTE: an IAM principal can acccess and s3 obkect if 
+the user IAM permissions allows it or resorce policy allows it 
+and there is no explicit deny 
+
+
+encryption: encrypt objects in amazon s3 using encryption keys 
+  
+
+
+                          s3 bucket policies
+json based policies
+     resources: buckets and objects 

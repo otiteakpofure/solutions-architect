@@ -1,0 +1,53 @@
+amazons3 is one of the building blocks and its infinite 
+
+
+amzon s3 use cases 
+
+backup and storage = 
+archive 
+disaster recovery 
+hybrid cloud storage 
+application hosting 
+media hosting 
+data lakes & big data analytics 
+software delivery 
+static website 
+
+
+amazon s3 buckets 
+
+-amazon s3 allows people to store objects(files) in "buckets"(directories)
+- Buckets must have a globally unique names (across all regions)
+- Buckets are defined at the region level 
+-s3 looks like a global service but buckets are created in a region 
+
+NAMING CONVENTION
+-No uppercase , No underscore
+- 3-63 characters long 
+- Not an IP
+- Must start with lowercase letter or numbers 
+- must not start with the prefix xn--
+- must not end with 
+
+
+                               AMAZON -OBJECTS 
+
+- Objects(files) have a key 
+- The key is the full path 
+    for example the key is the prefix before the object name 
+                          s3://my_bucket/another_folder/myfile.txt
+
+- There is no conceot of directories withing buckets(although the UI will trick you to think otherwise )
+- just  that keys with very long names that contains slashes (/)
+
+
+                               AMAZON s3
+Objects are contents of the body
+- max object size is 5tb (5000GB)
+- if uploadin more than 5gb , must use "multi-part upload"
+
+metadata (list of text keys/value pairs - system or user metadata)
+tags ( unicode key/value pairs - up to 10) - useful for security/lifecyclle 
+
+version ID (if versionig is enabled)
+

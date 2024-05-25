@@ -1,0 +1,9 @@
+you can version your files in amazon s3 and it is enabled at the bucket level 
+when a user uploads a file it will creata a version and when we upload the same file everytime it will overwrote the exisitng one 
+so its good you a new version of your file so you wont overwrite the exisiting one 
+as well you can roll back to get an older version of your file 
+
+
+NOTES: any file that is not provisioned priort to enabling versioning will have version null 
+suspending version does not delete the previous versions 
+

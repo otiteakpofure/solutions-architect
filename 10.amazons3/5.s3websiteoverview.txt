@@ -1,0 +1,7 @@
+s3 can host static website and as such we can upload files into our s3 instane and obtained
+
+                                           to upload a static website hosting 
+
+enter the bucket and then propeties and scroll down to static website hosting and spcify an index.html documents 
+
+and upload the index.html fule to the and chec fr

@@ -1,0 +1,16 @@
+amazon hands on versionu
+
+
+to ensure that files version still exist and ensure that all documents are not overwritten ensure there is version enabled 
+
+ rolling back to an old version 
+
+ for example you create version A before version B and then you want to roll back to version A , you must deleter the new version which is version B 
+
+ AND DELETE THE VERSION ID and this allows for a permanenetl delete 
+
+
+
+ USING DELETE MARKERS 
+
+ using delete markers does not actually delete files ,, it just 

@@ -1,0 +1,21 @@
+   Amazon s3 - repliction (CRR & SRR)
+   CRR = CROSS region repliction 
+   srr = same region replication
+
+
+
+   1. TO DO  a repliction between srr and crr we must enable versioning in the source and destination buckets 
+   2.  IF WE do CRR , THE SOURCE AND destination MUST BE DIFFERENT 
+   3. IF WE SRR, THE SOURCE AND destination MUST BE THE SAME 
+
+   buckets can be different in aws accounts 
+
+   COPying is asyncrhronous 
+
+   Must be proper IAM permissions to s3 
+
+   use-cases: 
+         CRR -  compliance , lower latency aaccess , replication across accounts 
+         SRR - log agggregation , live replication between production and test accounts 
+
+                                                                

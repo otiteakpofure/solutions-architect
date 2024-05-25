@@ -1,0 +1,38 @@
+amazon s3 uses region 
+
+and the bucket type is based on regions 
+
+
+when you click to view the s3 bucket and it gives accessd denid it because you cannot use the public url of the bucket 
+
+so to view the s3 bucket you use the open tab at tje top right which is called an s3 presigne url which contains a presigned key and secutory token to show the person who 
+opened the file 
+
+S3 bucket policies
+
+JSON based policies 
+ resources: buckets and objects 
+ effect: allow or deny 
+ actions: set of API to Allow or Deny 
+ principal: The account or user to apply the policy to 
+
+
+ Use S3 bucket for policy to: grent public acess to the bucket 
+
+
+ example: public accesss - use bucket policy 
+ - for cross acount accees 
+
+ create an aws policy to allowsd IAM users to access resources in our aws account 
+
+ 
+ BUCKET SETTINGS FOR BLOCKING
+ 
+ ARN (AMAZON RESOURCES NMAE): REFERES TO THE AMAZON RESOURCE IN S3 AFTER STATING THE ARN ADD A / AND NAME THE BUCKET 
+ 
+  PUBLIC ACCESS 
+These were created to provide blocking to data leaks 
+if you know your bucket should never be public then block all public access on aws  account 
+
+
+
