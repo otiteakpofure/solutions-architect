@@ -1,0 +1,4 @@
+in the lifecyel rule there is lifecyelrules actions which talsj about objecrta dnw aht to do with them 
+
+NOTE:UNDER transitioning in storage classes you can choose storage class transitions = days after object transitions 
+

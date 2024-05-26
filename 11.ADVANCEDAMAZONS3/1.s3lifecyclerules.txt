@@ -1,0 +1,31 @@
+                   moving objects between storage classes
+moving objcets between storage classes
+
+1. FOR infrequently accessed objects - STANDARD IA 
+2. for archive objects that you do not need fast access to - Glaciers or glaciers Deep archive 
+3. moving objects can be automated using lifecly rules 
+
+AMAZON S3 -LIFECYCLYE RULES 
+this involves changing stiorage classess from one class to anoher after certain duration
+
+it includes the following
+
+transition acrions - configure object to transtiion to another storage class 
+move objecrs to standards IA class 60 dayas afyer creatin 
+move to glaceir for archiving after 6 months 
+
+expiration actions - configure objects to expire(delete) after sometime 
+         - Access log files can be set to  delete after a 365 days 
+         - can be used to delete old versionf of files (if versioning is enabled)
+         - can be used to delete incomplete multi-part uploads 
+
+rules can also be specified based on certain prefixed for example , move to various storage class with the tag finance 
+rules can also be made to storage classes based of buckts 
+
+
+
+ AMAZON S3 ANALYTICS =STORAGE CLASS ANALYTICS 
+
+ This helps to showcase how the duration formpbjects moved intp varipu storage clsses will last 
+
+ 

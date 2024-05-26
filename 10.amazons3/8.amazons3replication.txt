@@ -18,4 +18,17 @@
          CRR -  compliance , lower latency aaccess , replication across accounts 
          SRR - log agggregation , live replication between production and test accounts 
 
-                                                                
+                                               AMAZON S3 - REPLICATION NOTES 
+1. after you enable repliction,  NOTE: only new objects can be replicated 
+2. optionally you can replicate existing objects using s3 batch replication 
+             - replicates exisiting objects and objects that failed operation 
+
+
+FOR DELETE OPERATION S3
+- can replicate delete markets from sources to target ( optional settings)
+- delete with a version ID are not replicated ( to avoide malicious deletes)
+
+There is no "chaining" of replication 
+- if bucket 1 has repliction into bucket 2 , which has replication into bucket 3 
+- the objects created in bucket 1 are not repliction to bucket 3 
+

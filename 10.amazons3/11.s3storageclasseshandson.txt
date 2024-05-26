@@ -1,0 +1,8 @@
+cretae buckerts 
+anc choose the storage classees 
+
+lifecycle rules 
+
+allows buckets to change stoirage claasess 
+
+anc dhosse the day when the buckers remains in a storage class deopending in the number if days 

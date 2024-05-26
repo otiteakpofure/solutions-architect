@@ -1,0 +1,58 @@
+    THERE ARE VARIOUS STORAGE CLASSES 
+when you create a bucket in amzaon s3 you can choose which storage class the buckets should belong to , and you can use lifecylec management to change them from one storage class to another 
+
+1. Amazon s3 standard - general purpose 
+
+         99.99% available , low tencey and high throihgput and used for frequenly accessed data 
+         use : CND , GAMING AND DATA ANALYTICS 
+
+2. Amazon s3 standard - Infrequenct access 
+             lower cost than STANDARD
+             USED FOR DR and backups 
+
+
+    amaxon s2 one zone -infrequent access
+               highly durable (99.99%) in a single AZ, data lost when an AZ destroyed 
+                 99.95% availabile 
+
+            storage for backs up and data on premise 
+
+
+            AMAXON S3 GLAXIER S3 CLASS 
+low-cost object storage meant for archiving/backup 
+pricing: price for storage + object retrieval cost 
+
+    ""  glacier instant retrieval
+
+- millisecond retrieval , great for data accessed once a quarter 
+- minimum storage duration of 90 days 
+
+        glacier flexible retrieval 
+expedted ( 1 to 5 minutes) , standard ( 3 to 5 hours), bulk ( 5 to 12 hours )- free 
+mimum storage of 90 days 
+
+        glacier deep archive - for ling term storage 
+standard (12 hours ), bulk (48 hours)
+minimum storage duration of 180 days
+
+        intelligent tiering 
+
+small monlhly moniriotin feee and allows you to moves objects between claasses 
+
+it includes the frequent access tieer - defaual 
+infrequent access tieer: objects not accessed for 30 days 
+archive instant access tier: objects not accessed for 90 days 
+archive accesses tier: comfigurabe from 90 days to 700+ days 
+deep arhive access tier: config. from 180 days to 700+ days
+
+
+                    comparison s3 
+
+availbility goes down during classes  
+
+s3 durability and availability 
+
+ir has a high durability of eleven 9 and it means  your items will be safely stored 
+
+availiability 
+

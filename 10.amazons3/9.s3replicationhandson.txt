@@ -1,0 +1,6 @@
+to replicate , there must be a version applied 
+
+after you have enabled version and created the buckets under thr s3 , you can now set up a replication rule, 
+replication starts from time yiu implement it and can only replicte earlier objects if the s3 batch operation was made 
+
+DELETE MARKER REPLICTION : they are not repliction by defaiult 
