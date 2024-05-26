@@ -21,3 +21,16 @@ use the following
 
 2.s3 Transfer Acceleration 
 
+TO ALLOW FASTER transfer of data , we can upload it an edge location which can also help in transfer of files 
+
+
+s3 performance - s3 byte range fetches 
+
+it is used paralleize byte ranges for downloading which includes sperating getting files into bytes so they can be download and sent to you in smaller byte 
+and it can be made in parallell
+ and its used to retrieve a partial amount of the file 
+
+ 
+
+edge locatios = CDNS 
+

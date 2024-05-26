@@ -1,0 +1,11 @@
+this opertatiosn allows for the performance of bulk operations on an exisitn s3 objects with a single request
+for example you can copy objects , encrypt all un-cncyrpted objects , modify ACL tahs , restore obkects from s3 glaciers 
+
+A JOB consists of a list of object the action to perform and optional parameters 
+
+it can also helps in reteieval , tracjs progress , send completio notifiations , generate reports 
+
+you can use s3 inventory to get object list and use s3 select to filter your object 
+
+
+

@@ -1,0 +1,40 @@
+storage lenses helps to do an array of services across your organizaiton 
+helps to understand analyzie and iptimze storage in the aws organization
+disover anomalies , idemtify cost efficneidsna dnd appky data protection best rpactices across eniter aws organization
+aggregatde data for organiztion speifi aacount sregions buckets or prefixes 
+default dahsboard or create yoir own dahsboars 
+can be configured to exporit metica daily to an s3 bcuekts 
+
+when you use the storage lens services it provides visualized summarized insights and trends for both free and advanced metrics
+it creates a defaukt dahboars shwoign multi-regon and multi-account data 
+
+it cant be deleted but can be disabled
+
+stirage lens - metrics 
+
+summary metirc - general information about the s3 
+use case: to identifying fastest growing or non-0usefyl,buckts 
+
+cost optimazrtion metric - information about storage cost 
+use case : to see bucekts which failed upload , to change objects to loeer cost 
+
+data protection matirc : for data protection 
+use cases: idntify buckets which are not following Dp BEST PRACTICES
+
+Access-management metric 
+provide insight for s3 object ownership 
+use cases : idemtify which obkct ownership setting the buckets ise 
+
+event metric
+provide insight for s3 event notificatins 
+
+
+perrformanc metic 
+to show the s3 acceltatio 
+
+activity metic : for CRUD operatios 
+
+dattied statis code : for HTTP STATUS CODE 
+
+
+STOIRAGE LENS either free or paid 

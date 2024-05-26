@@ -1,0 +1,4 @@
+for example, you want to download a file and you need only parts of the file fro the server you can also use s3 select which
+can provide you with only parts of the file that yopu need.  
+
+s3 selct woakrs on glacier select 
