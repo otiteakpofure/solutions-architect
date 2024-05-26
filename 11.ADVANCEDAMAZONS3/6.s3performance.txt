@@ -1,0 +1,23 @@
+by default 
+amazon s3 automatically scales to the high request rates , latency of up 100-200 ms 
+
+your application can acheieve at least 3500 PUT/COPY/POST/DELETE OR 5500 get/head requests per second per prefix in abucket 
+
+there are no limites ti the number of prefixeds in a bucket 
+
+example(object path => prefix)
+
+bucket/folder1/sub/file => /folder1/sub1 is the prefix = what is between the bucket and the file 
+
+                     s3 perfromance 
+to enhabce performance 
+
+use the following 
+
+1. multi-part upload 
+
+- these are recommended for file > 100MB, must be used for file > 5GB 
+- can help parallelize uploads ( speed up transfers)
+
+2.s3 Transfer Acceleration 
+

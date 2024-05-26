@@ -1,0 +1,3 @@
+                           S3 - Requester Pays 
+in this the buckets osupposed the requsters want to download largefiles from your system , the requester who are requeting these srvices will have to pay for the networking cost 
+it is helpful for largefiles and datafiles and the request3er mustr be authenticated with aws so aws can bill the requjester                            

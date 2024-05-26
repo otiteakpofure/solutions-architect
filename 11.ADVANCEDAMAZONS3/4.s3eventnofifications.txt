@@ -1,0 +1,14 @@
+     s3 events notifications
+various notifications can be sent based of your needs for application usages
+
+object can be filtered or anything
+you can do as much filters as you wantand for s3 notification sto workyou have to have iam permissions 
+which is AN SNS resource (access) policy , which allows sns to send logs to the resources about messsages to the sns resoruce accees policy 
+and this is same with sqs resourcce acccess policy ND LAMBADA RESOURCE ACCESS POLICY 
+
+NOTE : YO DONT USE ROLES FOR AMAZON S3 we deinf access policies ad thrse policy which are event notifications target 
+
+
+S3 events notifications wirh amazon event bridge
+
+with event bridge yoy can notifiactions which is moe advanceb by the eben policy 

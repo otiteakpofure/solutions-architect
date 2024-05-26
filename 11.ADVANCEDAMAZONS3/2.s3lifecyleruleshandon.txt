@@ -2,3 +2,5 @@ in the lifecyel rule there is lifecyelrules actions which talsj about objecrta d
 
 NOTE:UNDER transitioning in storage classes you can choose storage class transitions = days after object transitions 
 
+which gives how the current version of current version will change over time 
+
