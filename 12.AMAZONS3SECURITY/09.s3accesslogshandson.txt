@@ -1,0 +1,2 @@
+to creata an access logs enable logging
+go a bucket you have created an enable server access logging and under the destnation and choose th bucket rhat will handle the logging 

@@ -1,0 +1,14 @@
+                                    Amazon S3 - MFA delete
+
+THE mfA delete forces users to create or generate a code on a device ( usally a mobile phone or hardware) before doing important operations on s3 
+
+MFA will be required to: - permanenetly delete an object version 
+                         - suspend versioning on the buckets
+
+MFA wont be required for:
+       enable versioning 
+       list deleted versions 
+
+To use MFA delete , VERSIONING must be enabled on the bucket 
+
+NOTE: Only the bucket owner (root account) can be enabled/disabled MFA delete

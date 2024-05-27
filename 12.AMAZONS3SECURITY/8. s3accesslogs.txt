@@ -1,0 +1,9 @@
+s3 access logs  is used to provide notifications into events in your s3 , and these includes both autorized and non-authorizec 
+
+in this , logs are sent to another s3 bucket which is now analyzed using data analsis tool the target logging bucket must be in the same aws region 
+
+
+s3 access logs: warning 
+
+Do not set your access logging bucket to the sm bucket you are using and it will make the bucket grow exponentially 
+

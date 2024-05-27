@@ -1,0 +1,19 @@
+amazon s3- presigned urls
+
+The use of presigned urls is simple
+
+for example you create a prive s3 bucket and that you want somebody to have access to that private bucket , you can tgiove the person 
+a presigned url and this gives the person acces to these buckets 
+
+
+The presigned url 
+
+allows users to genrate a pre-signed URLs using the s3 console , AWS CLI or SDK URL expirartion 
+
+URL expirartion:
+ s3 - console = 1 min up to 720 minutes (12 hours)
+ aws cli - cofigure expiration with --expires- in paramters in seconds ( default 3600 sec, max 604800 secs = 168 hours )
+
+ users are given a pre-signe url and then they inherit the same privileges as the owneer of the acccount but they can only perform GET and PUT actions
+
+ 

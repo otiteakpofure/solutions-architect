@@ -1,0 +1,3 @@
+to allow mfa delete you have to use  MFA DEVICE OR AWS CLI 
+
+to do this watch the video and sue the commands stated in the video 
