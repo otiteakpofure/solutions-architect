@@ -1,0 +1,10 @@
+                        s3 GLACIER VAULT LOCK
+
+The s3 glacier valut lock is used to lock aws services  this isn done to prevent any form of delettio or alteration or whatsoever
+in this s3 glacier vault , an image is sent and then a policy is created to ensure a glacier vault 
+
+the s3 glacier VAUlt adopts a WORM ( WRITE ONE READ MANY)
+
+In this methid , you create a vault lock policy 
+this lock pilic stays permanent and can no longger be changed or deleted 
+ans this is useful for compliance and dta retention 
