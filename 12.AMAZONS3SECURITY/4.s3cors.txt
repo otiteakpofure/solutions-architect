@@ -1,0 +1,21 @@
+  cors (cross -origin resource sharing )
+
+  The CORS policy is for example you are on website and want to visit another website to ensure that your processes are fulffiled by doping this 
+   
+   origin = scheme (protocol) + host (domain) + port 
+    example: https://example.com 
+
+    this is a webs browser based mechanism to allow request to othe oriogins whule visiting the main origin 
+
+    the request to visit other origins wont be fulfilled unless the other oriaing allows for reuqest using cors 
+    CORS Headers ( example : Allow-control-allow-origin)
+
+    what us cors 
+
+
+    amazon s3 -cors 
+
+    the amazon cors allows s3 buckets to share resrouces from another oring to another origim
+
+    for example , we have a web browser and we are trying to talk to s3 bucket but its resouces are stored in anoyher s3 buckets for this to work 
+    we have to allow cors headers and 

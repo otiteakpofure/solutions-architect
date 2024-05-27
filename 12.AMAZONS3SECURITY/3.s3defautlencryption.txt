@@ -1,0 +1,5 @@
+by default sse-s3 encrytption is added to the buckets  
+
+but optionally you can force encryotion using a bucket policy and refuse any api ccalls to put an s3 object without encrytion headers
+
+bucket policy is evaulated before default encryption 

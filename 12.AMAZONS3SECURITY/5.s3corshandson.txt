@@ -1,0 +1,6 @@
+to run cors on s3 ensure that more than one bucket is created 
+ifnyou ccreate two buckets they have more than one address so to talk ti each 
+
+to alow pages talk to each other acriss different origins in amzon s3 
+
+and user your s3 policy which can be found in the document 

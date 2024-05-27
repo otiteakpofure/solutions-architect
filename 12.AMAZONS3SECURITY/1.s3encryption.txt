@@ -1,0 +1,93 @@
+you can encrypt amazon s3 buckets using one of the 4 methids 
+
+
+Server side encryption 
+- SSE - SSE with amazon s3 managed keys (SSE-S3) - which are enabled by default in the buckets 
+        In this method , you can encrypt s3 objects using keys handled and managed and owned by aws 
+
+- SSE with KMS keys stored in AWS KMS (SSE-KMS)
+-   LEVERAGE aws key managementent service (AWS KMS)
+
+SSE with Customer_provided keys (SSE-C)
+ - when you want to manage your own encryption keys 
+
+
+
+  sse-s3 = this includes keys handled and managed by aws 
+    - objects are encrypted  on the server-side 
+    -encryption type is AES-256 
+    - must set header "x-amz-server-side-encryption":"AES-256"
+    - enabled by defautl for new buckets and new objects 
+
+CloudWatch monitors applications and infrastructure performance in the AWS environment. CloudTrail monitors actions in the AWS environment.
+
+SSE-KMS 
+    - Encryption using keys handled and managed by AWS KMS 
+    - KMS advantaged : user control + audit key usage using cloud CloudTrail 
+    encrypted on server side 
+    - must set header "x-amz-server-side-encryption":"aws:kms"
+
+    SSE-KMS LIMITATIONS:
+    if you use SSE-KMS , you may be impacted by the KMS limits   
+
+    in the limitation associated with kms keys there is amount of request you can make to the API calls and if this amount is rached the api will start giving issues 
+
+
+    If you use sse-kms you may be impacted by the kms LIMITATIONS
+    when you upload , it calls the GenerateDataKay KMS API 
+     
+    WHEN YOU DOWNLOAD , it calls the decrypt KMS API 
+    count towards the KMS quota per second ( 5500, 10000, 300000 req/s based on region )
+
+    you can request a quota increase using the service quotas console 
+
+there is an updated vverio of aws-kms which is DSSE -KMS is doubled KMS 
+
+
+
+     sse -c 
+
+     keys are managed outside aws and we send the keys to aws but will not store the keys will proivide 
+     amazon s3 does not store the encryptions keys we provide 
+     https must be used 
+     encryptio key must be provided in HTTP headers for every http request made 
+
+
+
+
+     amazon s3 encryption - client side encryption 
+
+     - Using client libraries such amazon s3 client-side encryption libraries 
+     - client must encrypt data themselves before sending to Amazon s3 
+     - clients must decrypt data themselves when retrieving from amazon s3 
+     - customers fully manages the keys and encryption cycle 
+
+
+AMAZON S3 - ENCRYPTION IN TRANSIT (ssL/TLS)
+
+- Encryption in flight alsi called tls/ssL
+
+amazon s3 exposes two endpoints 
+HTTP endpoint - non-encrypted 
+HTTPS endpoint - encryption in flight 
+
+HTTPS is recommended 
+HTTPS is mandatory for sse-c 
+most clients would use the HTTPS endpoint by default 
+
+
+
+                          FORCING ENCRYPTION IN TRANSIT 
+
+You can force encryptio  in transit using aws:SecureTrsnaport 
+
+by doing this you can write a policy which states that 
+
+      aws:SecureTrsnaport: false 
+
+      which means anyboyd using http on the bucket will be blicked and anyboyd using https will be allowed 
+
+
+
+
+ 
